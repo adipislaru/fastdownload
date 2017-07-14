@@ -1,0 +1,6 @@
+ln -s $ServerPath/cstrike /var/www/webservers/fast.yourdomain.ro/$USERNAME_$IP-$PORT-$SERVICEID 
+sed -i '/sv_downloadurl/d' $ServerPath/cstrike/server.cfg 
+echo -e 'sv_downloadurl "http://yourdomain.ro:20000/$USERNAME_$IP-$PORT-$SERVICEID/"' >> $ServerPath/cstrike/server.cfg 
+
+echo ' sv_downloadurl installed !' 
+echo ' You can restart the server now !' 

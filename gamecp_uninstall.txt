@@ -1,0 +1,5 @@
+rm -rf /var/www/webservers/fast.yourdomain.ro/$USERNAME_$IP-$PORT-$SERVICEID 
+sed -i '/sv_downloadurl/d' $ServerPath/cstrike/server.cfg 
+
+echo ' sv_downloadurl uninstalled !' 
+echo ' It should stop working now !'
